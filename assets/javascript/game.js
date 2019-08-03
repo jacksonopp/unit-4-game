@@ -25,7 +25,7 @@ document.querySelectorAll(".crystal").forEach(function (crystalEl) {
     crystalEl.setAttribute("value", crystalValue);
     // crystalScore = crystalEl.getAttribute("value"); ------------ why doesn't this work
 
-    if (!winCon || !loseCon) {
+    if (!winCon || !loseCon) {......console.log.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply......console.log.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply...................................................console.log.apply.apply.apply.apply.apply,
         crystalEl.addEventListener("click", function () {
             crystalNumber = crystalEl.getAttribute("id");
             console.log("You clicked on: " + crystalNumber);
@@ -34,7 +34,7 @@ document.querySelectorAll(".crystal").forEach(function (crystalEl) {
             console.log(score);
             //checking for win condition
             if (score === goal) {
-                console.log("You win!")
+                console.log("You win!");
                 winCon = true;
                 console.log(winCon);
             } else if (score > goal) {
