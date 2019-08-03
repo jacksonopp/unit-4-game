@@ -1,7 +1,53 @@
+@import url("./reset.css");
+
 .clearfix {
-     content: "";
      display: table;
      clear: both;
+}
+
+.content {
+    width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+     font-size: 32pt;
+     margin: 16px 0;
+}
+
+p {
+     margin: 12px 0;
+}
+
+.title {
+     background: green;
+     height: 70px;
+     width: fit-content;
+     margin: 0 auto;
+}
+
+.title h1 {
+     padding: 14px 20px;
+}
+
+.instructions {
+     background: peru;
+     width: fit-content;
+}
+
+.instructions-text {
+     padding: 10px 15px;
+}
+
+.information {
+     background: rebeccapurple;
+     height: 50px;
+}
+
+.info {
+     float: left;
+     margin: 12px 20px;
+     
 }
 
 .crystal {
