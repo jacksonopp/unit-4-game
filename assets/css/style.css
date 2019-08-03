@@ -10,6 +10,11 @@
     margin: 0 auto;
 }
 
+body {
+    background-image: url("../images/diagonal-squares.png");
+    color: whitesmoke;
+}
+
 h1 {
      font-size: 32pt;
      margin: 16px 0;
@@ -20,7 +25,7 @@ p {
 }
 
 .title {
-     background: green;
+     /* background: green; */
      height: 70px;
      width: fit-content;
      margin: 0 auto;
@@ -31,8 +36,9 @@ p {
 }
 
 .instructions {
-     background: peru;
+     /* background: peru; */
      width: fit-content;
+     margin: 10px auto;
 }
 
 .instructions-text {
@@ -40,19 +46,46 @@ p {
 }
 
 .information {
-     background: rebeccapurple;
+     /* background: rebeccapurple; */
      height: 50px;
+     margin: 10px auto;
 }
 
+.information div {
+    margin: 0 20px;
+}
+
+.info-left {
+    float: left;
+}
+.info-right {
+    float: left;
+}
 .info {
-     float: left;
      margin: 12px 20px;
+     font-size: 20pt;
      
 }
-
+.crystals {
+    width: fit-content;
+    margin: 0 auto;
+    /* background: green; */
+}
 .crystal {
      float: left;
      margin: 15px 5px;
      height: 160px;
      /* width: 1000px; */
+}
+
+.resetButton {
+    width: fit-content;
+    margin: 20px auto;
+}
+
+button {
+    background: red;
+    font-size: 30pt;
+    padding: 3px 50px 8px;
+
 }

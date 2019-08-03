@@ -34,12 +34,11 @@ function gameReset() {
     winCon = false;
     loseCon = false;
     randomGoal();
-    console.log(goal);
-    runGame();
+    console.log("new goal: " + goal);
     score = 0;
     scoreText.textContent = "score:";
     resetBtn.innerHTML = "";
-
+    runGame();
 }
 
 //adding reset button
@@ -54,6 +53,7 @@ function runGame() {
     lossesText.textContent = "losses: " + losses;
 
     document.querySelectorAll(".crystal").forEach(function (crystalEl) {
+        crystalEl.setAttribute("value", 0);
         crystalValue = randomCrystalValue();
         crystalEl.setAttribute("value", crystalValue);
         // crystalScore = crystalEl.getAttribute("value"); ------------ why doesn't this work
