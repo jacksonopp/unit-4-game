@@ -1,4 +1,12 @@
+.clearfix {
+     content: "";
+     display: table;
+     clear: both;
+}
+
 .crystal {
-    float: left;
-    margin: 0 5px;
+     float: left;
+     margin: 15px 5px;
+     height: 160px;
+     /* width: 1000px; */
 }
