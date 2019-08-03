@@ -9,12 +9,12 @@ let crystalValue = 0;
 let winCon = false;
 let loseCon = false;
 
-//setting random goal
+//setting random goal function
 function randomGoal() {
     goal = Math.floor(Math.random() * 100 + 20);
 }
-randomGoal();
-console.log(goal);
+// randomGoal();
+// console.log(goal);
 
 //setting random value for crystal
 function randomCrystalValue() {
@@ -30,66 +30,83 @@ const winsText = document.getElementById("wins");
 const lossesText = document.getElementById("losses");
 
 //setting up reset function
-function gameReset() {
-    winCon = false;
-    loseCon = false;
-    randomGoal();
-    console.log("new goal: " + goal);
-    score = 0;
-    scoreText.textContent = "score:";
-    resetBtn.innerHTML = "";
-    runGame();
-}
 
 //adding reset button
-document.querySelector(".resetButton").addEventListener("click", function(){
+document.querySelector(".resetButton").addEventListener("click", function () {
     gameReset();
 })
 
 //the game
 function runGame() {
+    //initializing the info display
     scoreText.textContent = "score:";
     winsText.textContent = "wins: " + wins;
     lossesText.textContent = "losses: " + losses;
+    // console.log("your goal is(1): " + goal);
 
+    //runs through each crystal and sets it's value attribute to a random number
     document.querySelectorAll(".crystal").forEach(function (crystalEl) {
         crystalEl.setAttribute("value", 0);
         crystalValue = randomCrystalValue();
         crystalEl.setAttribute("value", crystalValue);
-        // crystalScore = crystalEl.getAttribute("value"); ------------ why doesn't this work
+        // crystalScore = crystalEl.getAttribute("value"); ------------ why doesn't this work though?
 
+        //adds event listener for click
         crystalEl.addEventListener("click", function () {
+            //checks if either stop condition is true, and prevents the game from running until it's reset
             if (!winCon && !loseCon) {
+
+                //get's the crystal number (for debugging)
                 crystalNumber = crystalEl.getAttribute("id");
                 console.log("You clicked on: " + crystalNumber);
-                console.log(crystalNumber + "'s value is: " + crystalEl.getAttribute("value"));
+                // console.log(crystalNumber + "'s value is: " + crystalEl.getAttribute("value"));
+
+                // adds the crystal value attribute to the score
                 score += parseInt(crystalEl.getAttribute("value"));
-                console.log(score);
+                // console.log("your goal is: " + goal);
+                // console.log("score: " + score);
+                // console.log("winCon: " + winCon);
+                // console.log("loseCon: " + loseCon);
+
                 //checking for win condition
                 if (score === goal) {
-                    console.log("You win!");
+                    // console.log("You win!");
                     winCon = true;
-                    console.log(winCon);
                     wins++;
+                    // hard reset
+                    // gameReset();
+                    // shows the reset button
                     resetBtn.innerHTML = "<button>reset</button>";
+                    // console.log(score);
 
                 } else if (score > goal) {
                     console.log("You lose!")
                     loseCon = true;
-                    console.log(loseCon);
+                    // console.log(loseCon);
                     losses++;
+                    // gameReset();
                     resetBtn.innerHTML = "<button>reset</button>";
+                    // console.log(score);
                 }
             }
             scoreText.textContent = "score: " + score;
             winsText.textContent = "wins: " + wins;
             lossesText.textContent = "losses: " + losses;
-
         })
-        goalText.textContent = "goal: " + goal;
-
     })
 }
 
+function gameReset() {
+    winCon = false;
+    loseCon = false;
+    randomGoal();
+    goalText.textContent = "goal: " + goal;
+    score = 0;
+    scoreText.textContent = "score:";
+    resetBtn.innerHTML = "";
+}
+
+
+gameReset();
 runGame();
 

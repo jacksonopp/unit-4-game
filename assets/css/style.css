@@ -1,4 +1,7 @@
 @import url("./reset.css");
+<style>
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Alike+Angular|Montserrat&display=swap');
+</style>
 
 .clearfix {
      display: table;
@@ -8,6 +11,7 @@
 .content {
     width: 800px;
     margin: 0 auto;
+    font-family: 'Abril Fatface', cursive;
 }
 
 body {
@@ -16,6 +20,7 @@ body {
 }
 
 h1 {
+    font-family: 'Alike Angular', serif;
      font-size: 32pt;
      margin: 16px 0;
 }
