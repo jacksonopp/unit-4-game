@@ -1,12 +1,96 @@
+@import url("./reset.css");
+<style>
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Alike+Angular|Montserrat&display=swap');
+</style>
+
 .clearfix {
-     content: "";
      display: table;
      clear: both;
 }
 
+.content {
+    width: 800px;
+    margin: 0 auto;
+    font-family: 'Abril Fatface', cursive;
+}
+
+body {
+    background-image: url("../images/diagonal-squares.png");
+    color: whitesmoke;
+}
+
+h1 {
+    font-family: 'Alike Angular', serif;
+     font-size: 32pt;
+     margin: 16px 0;
+}
+
+p {
+     margin: 12px 0;
+}
+
+.title {
+     /* background: green; */
+     height: 70px;
+     width: fit-content;
+     margin: 0 auto;
+}
+
+.title h1 {
+     padding: 14px 20px;
+}
+
+.instructions {
+     /* background: peru; */
+     width: fit-content;
+     margin: 10px auto;
+}
+
+.instructions-text {
+     padding: 10px 15px;
+}
+
+.information {
+     /* background: rebeccapurple; */
+     height: 50px;
+     margin: 10px auto;
+}
+
+.information div {
+    margin: 0 20px;
+}
+
+.info-left {
+    float: left;
+}
+.info-right {
+    float: left;
+}
+.info {
+     margin: 12px 20px;
+     font-size: 20pt;
+     
+}
+.crystals {
+    width: fit-content;
+    margin: 0 auto;
+    /* background: green; */
+}
 .crystal {
      float: left;
      margin: 15px 5px;
      height: 160px;
      /* width: 1000px; */
+}
+
+.resetButton {
+    width: fit-content;
+    margin: 20px auto;
+}
+
+button {
+    background: red;
+    font-size: 30pt;
+    padding: 3px 50px 8px;
+
 }
