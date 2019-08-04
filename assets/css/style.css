@@ -69,7 +69,7 @@ p {
 .info {
      margin: 12px 20px;
      font-size: 20pt;
-     font-family: "Abril Fatface", cursive;
+     font-family: cursive;
 }
 .crystals {
      width: fit-content;

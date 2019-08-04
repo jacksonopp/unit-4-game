@@ -39,9 +39,9 @@ document.querySelector(".resetButton").addEventListener("click", function () {
 //the game
 function runGame() {
     //initializing the info display
-    scoreText.textContent = "score:";
-    winsText.textContent = "wins: " + wins;
-    lossesText.textContent = "losses: " + losses;
+    scoreText.textContent = "Score:";
+    winsText.textContent = "Wins: " + wins;
+    lossesText.textContent = "Losses: " + losses;
     // console.log("your goal is(1): " + goal);
 
     //runs through each crystal and sets it's value attribute to a random number
@@ -89,9 +89,9 @@ function runGame() {
                     // console.log(score);
                 }
             }
-            scoreText.textContent = "score: " + score;
-            winsText.textContent = "wins: " + wins;
-            lossesText.textContent = "losses: " + losses;
+            scoreText.textContent = "Score: " + score;
+            winsText.textContent = "Wins: " + wins;
+            lossesText.textContent = "Losses: " + losses;
         })
     })
 }
@@ -100,9 +100,9 @@ function gameReset() {
     winCon = false;
     loseCon = false;
     randomGoal();
-    goalText.textContent = "goal: " + goal;
+    goalText.textContent = "Goal: " + goal;
     score = 0;
-    scoreText.textContent = "score:";
+    scoreText.textContent = "Score:";
     resetBtn.innerHTML = "";
 }
 
