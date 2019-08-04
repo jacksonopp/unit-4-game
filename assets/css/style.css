@@ -1,7 +1,5 @@
 @import url("./reset.css");
-<style>
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Alike+Angular|Montserrat|Open+Sans&display=swap');
-</style>
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Alike+Angular|Montserrat|Open+Sans&display=swap");
 
 .clearfix {
      display: table;
@@ -9,25 +7,25 @@
 }
 
 .content {
-    width: 800px;
-    margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
+     width: 90%;
+     margin: 0 auto;
+     font-family: "Abril Fatface", cursive;
 }
 
 body {
-    background-image: url("../images/diagonal-squares.png");
-    color: whitesmoke;
-    font-style: 
+     background-image: url("../images/diagonal-squares.png");
+     color: whitesmoke;
 }
 
 h1 {
-    font-family: 'Alike Angular', serif;
+     font-family: "Alike Angular", serif;
      font-size: 32pt;
      margin: 16px 0;
 }
 
 p {
      margin: 12px 0;
+     font-family: "Open Sans", sans-serif;
 }
 
 .title {
@@ -55,28 +53,28 @@ p {
      /* background: rebeccapurple; */
      height: 50px;
      margin: 10px auto;
+     font-family: "Abril Fatface", cursive;
 }
 
 .information div {
-    margin: 0 20px;
+     margin: 0 20px;
 }
 
 .info-left {
-    float: left;
+     float: left;
 }
 .info-right {
-    float: left;
+     float: left;
 }
 .info {
      margin: 12px 20px;
      font-size: 20pt;
-    font-family: 'Abril Fatface', cursive;
-
+     font-family: "Abril Fatface", cursive;
 }
 .crystals {
-    width: fit-content;
-    margin: 0 auto;
-    /* background: green; */
+     width: fit-content;
+     margin: 0 auto;
+     /* background: green; */
 }
 .crystal {
      float: left;
@@ -86,13 +84,12 @@ p {
 }
 
 .resetButton {
-    width: fit-content;
-    margin: 20px auto;
+     width: fit-content;
+     margin: 20px auto;
 }
 
 button {
-    background: red;
-    font-size: 30pt;
-    padding: 3px 50px 8px;
-
+     background: red;
+     font-size: 30pt;
+     padding: 3px 50px 8px;
 }
