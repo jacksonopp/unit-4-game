@@ -46,10 +46,6 @@ function runGame() {
 
     //runs through each crystal and sets it's value attribute to a random number
     document.querySelectorAll(".crystal").forEach(function (crystalEl) {
-        crystalEl.setAttribute("value", 0);
-        crystalValue = randomCrystalValue();
-        crystalEl.setAttribute("value", crystalValue);
-        // crystalScore = crystalEl.getAttribute("value"); ------------ why doesn't this work though?
 
         //adds event listener for click
         crystalEl.addEventListener("click", function () {
@@ -59,7 +55,7 @@ function runGame() {
                 //get's the crystal number (for debugging)
                 crystalNumber = crystalEl.getAttribute("id");
                 console.log("You clicked on: " + crystalNumber);
-                // console.log(crystalNumber + "'s value is: " + crystalEl.getAttribute("value"));
+                console.log(crystalNumber + "'s value is: " + crystalEl.getAttribute("value"));
 
                 // adds the crystal value attribute to the score
                 score += parseInt(crystalEl.getAttribute("value"));
@@ -104,6 +100,13 @@ function gameReset() {
     score = 0;
     scoreText.textContent = "Score:";
     resetBtn.innerHTML = "";
+    document.querySelectorAll(".crystal").forEach(function (crystalEl) {
+        crystalEl.setAttribute("value", 0);
+        crystalValue = randomCrystalValue();
+        crystalEl.setAttribute("value", crystalValue);
+        // crystalScore = crystalEl.getAttribute("value"); ------------ why doesn't this work though?
+
+    })
 }
 
 
