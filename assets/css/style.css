@@ -1,6 +1,6 @@
 @import url("./reset.css");
 <style>
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Alike+Angular|Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Alike+Angular|Montserrat|Open+Sans&display=swap');
 </style>
 
 .clearfix {
@@ -11,12 +11,13 @@
 .content {
     width: 800px;
     margin: 0 auto;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
     background-image: url("../images/diagonal-squares.png");
     color: whitesmoke;
+    font-style: 
 }
 
 h1 {
@@ -69,7 +70,8 @@ p {
 .info {
      margin: 12px 20px;
      font-size: 20pt;
-     
+    font-family: 'Abril Fatface', cursive;
+
 }
 .crystals {
     width: fit-content;
