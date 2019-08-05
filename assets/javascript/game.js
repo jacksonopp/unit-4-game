@@ -42,7 +42,6 @@ function runGame() {
     scoreText.textContent = "Score:";
     winsText.textContent = "Wins: " + wins;
     lossesText.textContent = "Losses: " + losses;
-    // console.log("your goal is(1): " + goal);
 
     //runs through each crystal and sets it's value attribute to a random number
     document.querySelectorAll(".crystal").forEach(function (crystalEl) {
@@ -55,10 +54,10 @@ function runGame() {
                 //get's the crystal number (for debugging)
                 crystalNumber = crystalEl.getAttribute("id");
                 console.log("You clicked on: " + crystalNumber);
-                console.log(crystalNumber + "'s value is: " + crystalEl.getAttribute("value"));
+                console.log(crystalNumber + "'s value is: " + crystalScore);
 
                 // adds the crystal value attribute to the score
-                score += parseInt(crystalEl.getAttribute("value"));
+                score += parseInt(crystalScore);
                 // console.log("your goal is: " + goal);
                 // console.log("score: " + score);
                 // console.log("winCon: " + winCon);
@@ -72,7 +71,7 @@ function runGame() {
                     // hard reset
                     // gameReset();
                     // shows the reset button
-                    resetBtn.innerHTML = "<button>reset</button>";
+                    resetBtn.innerHTML = "<button>Reset</button>";
                     // console.log(score);
 
                 } else if (score > goal) {
@@ -81,7 +80,7 @@ function runGame() {
                     // console.log(loseCon);
                     losses++;
                     // gameReset();
-                    resetBtn.innerHTML = "<button>reset</button>";
+                    resetBtn.innerHTML = "<button>Reset</button>";
                     // console.log(score);
                 }
             }
@@ -104,8 +103,8 @@ function gameReset() {
         crystalEl.setAttribute("value", 0);
         crystalValue = randomCrystalValue();
         crystalEl.setAttribute("value", crystalValue);
-        // crystalScore = crystalEl.getAttribute("value"); ------------ why doesn't this work though?
-
+        crystalScore = crystalEl.getAttribute("value");
+        console.log("crystalScore:" + crystalScore);
     })
 }
 
